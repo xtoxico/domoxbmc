@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.service.domoxbmc" name="XBMC OpenDomo Integrate" version="0.1.0" provider-name="xtoxico">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+  <extension point="xbmc.service" library="domoxbmc.py" start="login"></extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>domoXBMC</summary>
+    <description lang="en">Este script primario apaga las luces de la sala de estar cuando comienza una reproducción y las vuelve a encender cuando esta termina</description>
+    <description lang="en">This scripts turns off living room's light when a film start and turn on when it finish</description>    
+    <platform>all</platform>
+    <language></language>
+    
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3</license>    
+    <website>http://www.antoniotirado.com</website>
+    <source>git://github.com/xtoxico/domoxbmc</source>
+    <email>yosoy@antoniotirado.com</email>
+  </extension>
+</addon>
+
+
